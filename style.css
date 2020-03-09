@@ -88,6 +88,53 @@ h1.title_text {
     margin-top: 10px;
 }
 
+/* Style the tab */
+.tab {
+    float: left;
+    width: 100%;
+}
+
+.tab button {
+    overflow: hidden;
+    border: none;
+    background: none;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin-right: 1px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab button:hover {
+    background-color: #f1f1f1;
+}
+
+.tab button.active {
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.tab button:not(.active) {
+    border-bottom: 1px solid #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 @media (min-width: 768px) {
     .container {
